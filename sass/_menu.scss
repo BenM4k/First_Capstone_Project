@@ -1,0 +1,81 @@
+header {
+    width: 100%;
+    height: 5em;
+
+    .menu-btn {
+        position: absolute;
+        z-index: 1;
+        left: 1rem;
+        top: 1rem;
+        cursor: pointer;
+        height: 20px;
+        width: 28px;
+        
+        .burger {
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 28px;
+            height: 3px;
+            background-color: map-get($map: $colors, $key: "primary");
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -8px;
+                width: 28px;
+                height: 3px;
+                background-color: map-get($map: $colors, $key: "primary" );
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 8px;
+                width: 28px;
+                height: 3px;
+                background-color: map-get($map: $colors, $key: "primary" );
+            }
+
+            &.open {
+                transform: rotate(720deg);
+                background: transparent;
+
+                &::before {
+                    transform: rotate(45deg) translate(5px, 8px);
+                    background-color: map-get($map: $colors, $key: "secondary" );
+                };
+
+                &::after {
+                    transform: rotate(-45deg) translate(3px, -7px);
+                    background-color: map-get($map: $colors, $key: "secondary" );
+                }
+            }
+        }
+    }
+
+    .navbar {
+        .menu-navbar {
+            visibility: hidden;
+            &.open {
+                visibility: visible;
+                height: 100vh;
+                @include flex-center(column);
+
+                .menu-navbar__item {
+                    a {
+                        color: map-get($map: $colors, $key: "secondary" );
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                        font-family: map-get($map: $font_families, $key: "first"), sans-serif;
+                    }
+                }
+            }
+        }
+    }
+
+    &.open {
+        height: 100vh;
+        background: map-get($map: $colors, $key: "primary");
+    }
+}

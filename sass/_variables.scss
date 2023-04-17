@@ -50,14 +50,16 @@ $colors : (
   }
 }
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  border-radius: $radius;
-  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+@mixin flex-center($orientation){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $orientation;
 }
 
-@mixin text-truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+@mixin flex-start($orientation) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: $orientation;
 }
