@@ -1,0 +1,20 @@
+@import "./variables";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: map-get($map: $colors, $key: "tertiary");
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
