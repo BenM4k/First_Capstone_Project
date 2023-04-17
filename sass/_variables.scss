@@ -2,56 +2,62 @@
 @import url('https://fonts.cdnfonts.com/css/cocogoose');
 
 $font_weights : (
-    "thin": 100,
-    "small": 300,
-    "regular": 400,
-    "medium": 700,
-    "bold": 900
+  "thin": 100,
+  "small": 300,
+  "regular": 400,
+  "medium": 700,
+  "bold": 900
 );
 
 $font_families : (
-    "first": "COCOGOOSE",
-    "second": "Lato"
+  "first": "COCOGOOSE",
+  "second": "Lato"
 );
 
 $colors : (
-    "primary": #272a31,
-    "secondary": #ec5242,
-    "tertiary": #d3d3d3
+  "primary": #272a31,
+  "secondary": #ec5242,
+  "tertiary": #d3d3d3
 );
 
 @mixin breakpoint($point) {
-    @if $point == xl {
-      @media (max-width: 75em) { @content; }
-    }
-    @else if $point == minxl {
-      @media (min-width: 75em) { @content; }
-    }  
-    @else if $point == lg {
-      @media (max-width: 62em) { @content; }
-    }
-    @else if $point == md {
-      @media (max-width: 48em)  { @content; }
-    }
-    @else if $point == sm {
-      @media (max-width: 34em)  { @content; }
-    }  
-    @else if $point == mobile {
-      @media (max-width: 25em)  { @content; }
-    }  
-    @else if $point == mobilexs {
-      @media (max-width: 21.875em)  { @content; }
-    }      
-  };
+  @if $point == xl {
+    @media (max-width: 75em) { @content; }
+  }
+
+  @else if $point == minxl {
+    @media (min-width: 75em) { @content; }
+  }
+
+  @else if $point == lg {
+    @media (max-width: 62em) { @content; }
+  }
+
+  @else if $point == md {
+    @media (max-width: 48em) { @content; }
+  }
+
+  @else if $point == sm {
+    @media (max-width: 34em) { @content; }
+  }
+
+  @else if $point == mobile {
+    @media (max-width: 25em) { @content; }
+  }
+
+  @else if $point == mobilexs {
+    @media (max-width: 21.875em) { @content; }
+  }
+}
 
 @mixin border-radius($radius) {
--webkit-border-radius: $radius;
-border-radius: $radius;
-background-clip: padding-box;  /* stops bg color from leaking outside the border: */
-};
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
 
 @mixin text-truncate {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
