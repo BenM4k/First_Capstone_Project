@@ -52,8 +52,6 @@ The website present a gallery of the restaurant's interior and exterior. The goa
 
 ### Key Features <a name="key-features"></a>
 
-> Find listed below some feature used in the design of this website.
-
 - **HTML and CSS**
 - **Linters**
 - **Git and Github**
@@ -68,43 +66,63 @@ The website present a gallery of the restaurant's interior and exterior. The goa
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> 
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-- A basic knowledge of html and css
-- A basic understanding of linters
-- A web browser
+In order to run this project you need: 
+- GitHub;
+- Code Editor;
+- Basic Knowledge of HTML and CSS;
+
 
 ### Setup
 
 Clone this repository to your desired folder:
-
+```sh
   cd my-folder
-  
-  "git clone git@github.com/BenM4k/hellomicroverse"
+  git clone https://github.com/BenM4k/First_Capstone_Project.git
+```
+
 
 ### Install
 
 Install this project with:
+- npm install
+
+<!--
+Example command:
+
+```sh
+  cd my-project
+  gem install
+```
+--->
 
 ### Usage
 
 To run the project, execute the following command:
 
+- Run it in your local machine with local server
+
 ### Run tests
 
 To run tests, run the following command:
+
+- npx stylelint "**/*.{css,scss}"
+- npx hint .
 
 ### Deployment
 
 You can deploy this project using:
 
+GitHub Pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
