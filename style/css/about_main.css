@@ -506,7 +506,7 @@ li {
   .footer {
     background-color: #272a31;
   }
-  .footer img {
+  .footer .footer-img {
     width: 120px;
     height: 30px;
   }
@@ -597,7 +597,7 @@ li {
   .footer {
     background-color: #272a31;
   }
-  .footer img {
+  .footer .footer-img {
     width: 120px;
     height: 30px;
   }
