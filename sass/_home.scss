@@ -3,10 +3,13 @@
 .home {
   padding-top: 150px;
   padding-bottom: 90px;
+  background: linear-gradient(0deg, rgb(255, 255, 255), rgba(241, 240, 240, 0.9)), url(/assets/bg3.png) ;
+  background-repeat: repeat;
+  background-size: contain;
 
   .home-title {
     color: map-get($map: $colors, $key: "secondary");
-    font-weight: map-get($map: $font_weights, $key: "small");
+    font-weight: map-get($map: $font_weights, $key: "regular");
   }
 
   .home-title__big {
@@ -16,8 +19,8 @@
   }
 
   .home-paragraph {
-    background-color: map-get($map: $colors, $key: "tertiary");
-    border: 1px solid #fff;
+    background-color: #f3f2f2;
+    border: 2px solid #fff;
     color: map-get($map: $colors, $key: "primary");
     border-radius: 5px;
     margin-top: 30px;

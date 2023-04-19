@@ -56,8 +56,6 @@ header {
   }
 
   .navbar {
-    @include flex-space-between(row);
-
     width: 100%;
 
     .logo {

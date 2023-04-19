@@ -29,7 +29,7 @@
 
   .main-program__container {
     margin: 20px 0 20px 0;
-    gap: 10px;
+    gap: 7px;
 
     .main-program__list {
       width: 100%;
@@ -41,7 +41,6 @@
 
         h3 {
           color: map-get($map: $colors, $key: "secondary");
-          font-size: 13px;
           font-weight: map-get($map: $font_weights, $key: "bold");
         }
       }

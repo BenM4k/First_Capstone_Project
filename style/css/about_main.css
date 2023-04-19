@@ -65,7 +65,18 @@ li {
 }
 @media screen and (min-width: 1500px) {
   header {
-    padding: 0 360px 0 360px;
+    padding: 0 120px 0 360px;
+  }
+}
+
+@media screen and (min-width: 1110px) and (max-width: 1499px) {
+  footer {
+    padding: 0 120px 0 120px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  footer {
+    padding: 0 120px 0 360px;
   }
 }
 

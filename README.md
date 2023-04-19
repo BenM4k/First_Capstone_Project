@@ -62,7 +62,7 @@ The website present a gallery of the restaurant's interior and exterior. The goa
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://benm4k.github.io/Personal_Portfolio/)
+- [Live Demo Link](https://benm4k.github.io/First_Capstone_Project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,7 +160,9 @@ If you like this project, U can reach me on my Twitter handle for any collaborat
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse and all My Micronauts partners for their help on this project
+I would like to thank Microverse and all My Micronauts partners for their help on this project. 
+
+I would like to thank Cindy Shin, the author of this design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

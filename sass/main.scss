@@ -1,1 +1,66 @@
 @import "./config", "./variables", "./responsive", "./menu", "./home", "./programs", "./speakers";
+
+
+.partners {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: map-get($map: $colors, $key: "primary");
+
+  h2 {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+  }
+
+  span {
+    display: block;
+    margin-top: 15px;
+    background-color: map-get($map: $colors, $key: "secondary");
+    height: 2px;
+    width: 10%;
+    opacity: 0.3;
+  }
+
+  ul {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+    
+    .partners-list1 {
+      @include flex-center(row);
+      gap: 40px;
+      padding: 0 50px 0 50px;
+
+      a {
+        img {
+          width: 60px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+  
+    @include flex-start(row);
+  
+    gap: 30px;
+  
+    .footer-img {
+      margin-left: 130px;
+      width: 30%;
+      height: 20px;
+    }
+  
+    p {
+      font-size: 10px;
+      color: gray;
+      text-align: start;
+      margin-right: 50px;
+      width: 60%;
+    }
+  }
