@@ -21,32 +21,24 @@ $colors : (
 );
 
 @mixin breakpoint($point) {
-  @if $point == xl {
-    @media (max-width: 75em) { @content; }
-  }
-
-  @else if $point == minxl {
-    @media (min-width: 75em) { @content; }
-  }
-
-  @else if $point == lg {
-    @media (max-width: 62em) { @content; }
+  @if $point == lg {
+    @media screen and (min-width: 1500px) { @content; }
   }
 
   @else if $point == md {
-    @media (max-width: 48em) { @content; }
+    @media screen and (min-width: 1110px) and (max-width: 1499px) { @content; }
   }
 
   @else if $point == sm {
-    @media (max-width: 34em) { @content; }
+    @media screen and (min-width: 768px) and (max-width: 1109px) { @content; }
   }
 
   @else if $point == mobile {
-    @media (max-width: 25em) { @content; }
+    @media screen and (min-width: 321px) and (max-width: 787px) { @content; }
   }
 
   @else if $point == mobilexs {
-    @media (max-width: 21.875em) { @content; }
+    @media screen and (max-width:320px) { @content; }
   }
 }
 
@@ -61,5 +53,19 @@ $colors : (
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-direction: $orientation;
+}
+
+@mixin flex-space-between($orientation) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: $orientation;
+}
+
+@mixin flex-space-around($orientation) {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-direction: $orientation;
 }

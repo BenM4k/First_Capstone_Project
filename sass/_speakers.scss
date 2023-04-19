@@ -42,8 +42,6 @@
                     right: 0;
                     object-fit: cover;
                     overflow: hidden;
-                    width: 100px;
-                    height: 80px;
                     object-fit: contain;
                 }
             }
@@ -83,8 +81,7 @@
         background-color: #fff;
         border: 1px solid map-get($map: $colors, $key: "primary");
         opacity: 0.6;
-        margin-top: 20px;
-        width: 100%;
+        margin-top: 25px;
         padding: 10px 0 10px;
         text-transform: uppercase;
     }
