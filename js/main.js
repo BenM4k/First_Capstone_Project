@@ -26,12 +26,14 @@ menuBtn.addEventListener('click', toggleMenu);
 
 const speakers = [
   {
+    id: '01',
     name: 'Yochai Benkler',
     title: 'Lorem ipsum dolor sit amet.',
     paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, nisi esse.',
     img: 'assets/img1.jpg',
   },
   {
+    id: '02',
     name: 'Yochai Benkler',
     title: 'Lorem ipsum dolor sit amet.',
     paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, nisi esse.',
@@ -45,7 +47,7 @@ function createSpeaker(speaker) {
   const section = `
     <li class="featured-speakers__list">
         <div class="list-img">
-            <img src="${speaker.img}" alt="" class="featured-speakers__img">
+            <img src="${speaker.img}" alt="${speaker.id}" class="featured-speakers__img">
         </div>
         <div class="list-desc">
             <h2>${speaker.name}</h2>
