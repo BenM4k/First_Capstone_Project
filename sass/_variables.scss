@@ -38,11 +38,11 @@ $colors : (
   }
 
   @else if $point == mobilexs {
-    @media screen and (max-width:320px) { @content; }
+    @media screen and (max-width: 320px) { @content; }
   }
 }
 
-@mixin flex-center($orientation){
+@mixin flex-center($orientation) {
   display: flex;
   align-items: center;
   justify-content: center;

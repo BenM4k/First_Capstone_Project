@@ -1,79 +1,84 @@
 @import "../variables";
 
 .past-cc {
-    border-top: 1px gray solid;
-    background: #fff;
+  border-top: 1px gray solid;
+  background: #fff;
+
+  @include flex-center(column);
+
+  padding-top: 50px;
+  padding-bottom: 30px;
+
+  .past-cc__title {
+    font-size: 18px;
+    color: map-get($map: $colors, $key: "primary");
+    text-align: center;
+  }
+
+  span {
+    display: block;
+    margin-top: 15px;
+    background-color: map-get($map: $colors, $key: "secondary");
+    height: 2px;
+    width: 5%;
+    opacity: 0.3;
+  }
+
+  .past-cc__paragraph {
+    text-align: center;
+    padding: 0 50px 0 50px;
+    margin-top: 15px;
+  }
+
+  .past-cc__container {
     @include flex-center(column);
-    padding-top: 50px;
-    padding-bottom: 30px;
 
-    .past-cc__title{
-        font-size: 18px;
-        color: map-get($map: $colors, $key: "primary");
+    gap: 15px;
+    margin-top: 20px;
+    width: 80%;
+
+    .past-cc__list {
+      @include flex-center(column);
+
+      width: 100%;
+      height: 180px;
+      background: url(/assets/summit1.jpg);
+      background-color: rgba(248, 247, 216, 0.7);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      h3 {
+        color: #fff;
+        position: absolute;
+        font-family: map-get($map: $font_families, $key: "first");
+      }
+
+      p {
+        color: #fff;
+        position: absolute;
+        padding: 0 40px 0 40px;
+        margin-top: 60px;
         text-align: center;
+      }
+
+      &::before {
+        content: '';
+        // position: absolute;
+        top: 0;
+        left: 0;
+        height: 150%;
+        width: 100%;
+        background: map-get($map: $colors, $key: "secondary");
+        opacity: 0.6;
+      }
     }
 
-    span {
-        display: block;
-        margin-top: 15px;
-        background-color: map-get($map: $colors, $key: "secondary");
-        height: 2px;
-        width: 5%;
-        opacity: .3;
+    .past-cc__list:last-child {
+      width: 100%;
+      height: 180px;
+      background: url(/assets/summit2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
-
-    .past-cc__paragraph {
-        text-align: center;
-        padding: 0 50px 0 50px;
-        margin-top: 15px;
-    }
-
-    .past-cc__container {
-        @include flex-center(column);
-        gap: 15px;
-        margin-top: 20px;
-        width: 80%;
-        .past-cc__list {
-            @include flex-center(column);
-            width: 100%;
-            height: 180px;
-            background: url(/assets/summit1.jpg);
-            background-color: rgba(248, 247, 216, 0.7);
-            background-repeat: no-repeat;
-            background-size: cover;
-
-            h3 {
-                color: #fff;
-                position: absolute;
-                font-family: map-get($map: $font_families, $key: "first");
-            }
-
-            p{
-                color: #fff;
-                position: absolute;
-                padding: 0 40px 0 40px;
-                margin-top: 60px;
-                text-align: center;
-            }
-
-            &::before{
-                content: '';
-                // position: absolute;
-                top: 0;
-                left: 0;
-                height: 150%;
-                width: 100%;
-                background: map-get($map: $colors, $key: "secondary");
-                opacity: 0.6;
-            }
-        }
-        
-        .past-cc__list:last-child {
-            width: 100%;
-            height: 180px;
-            background: url(/assets/summit2.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
+  }
 }

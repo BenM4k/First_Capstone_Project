@@ -709,7 +709,7 @@ footer {
   flex-direction: row;
   gap: 30px;
 }
-footer img {
+footer .footer-img {
   width: 30%;
   height: 20px;
 }

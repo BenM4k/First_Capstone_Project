@@ -20,29 +20,34 @@ li {
   list-style-type: none;
 }
 
-section{
-  @include breakpoint(mobilexs){
+section {
+  @include breakpoint(mobilexs) {
     padding: 0 10px 0 10px;
   }
-  @include breakpoint(mobile){
+
+  @include breakpoint(mobile) {
     padding: 0 15px 0 15px;
   }
-  @include breakpoint(sm){
+
+  @include breakpoint(sm) {
     padding: 0 30px 0 30px;
   }
-  @include breakpoint(md){
+
+  @include breakpoint(md) {
     padding: 0 120px 0 120px;
   }
-  @include breakpoint(lg){
+
+  @include breakpoint(lg) {
     padding: 0 360px 0 360px;
   }
 }
 
 header {
-  @include breakpoint(md){
+  @include breakpoint(md) {
     padding: 0 120px 0 120px;
   }
-  @include breakpoint(lg){
+
+  @include breakpoint(lg) {
     padding: 0 360px 0 360px;
   }
 }

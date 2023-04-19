@@ -119,7 +119,7 @@ li {
   .main-program .main-program__container .main-program__list p {
     width: 60%;
   }
-  .list-img img {
+  .list-img .featured-speakers__img {
     width: 75px;
     height: 80px;
   }
@@ -179,7 +179,7 @@ li {
   .main-program .main-program__container .main-program__list p {
     width: 60%;
   }
-  .list-img img {
+  .list-img .featured-speakers__img {
     width: 100px;
     height: 80px;
   }
@@ -233,7 +233,7 @@ li {
   .main-program .main-program__container .main-program__list p {
     width: 60%;
   }
-  .list-img img {
+  .list-img .featured-speakers__img {
     width: 100px;
     height: 80px;
   }
@@ -587,7 +587,7 @@ header.open {
   font-weight: 900;
 }
 .main-program .main-program__container .main-program__list p {
-  color: #ffffff;
+  color: #fff;
   font-size: 12px;
 }
 .main-program .main-program__button {
@@ -642,7 +642,6 @@ header.open {
   position: absolute;
   bottom: 0;
   right: 0;
-  object-fit: cover;
   overflow: hidden;
   object-fit: contain;
 }
