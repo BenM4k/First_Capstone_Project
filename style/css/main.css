@@ -403,7 +403,7 @@ li {
     width: 120px;
     height: 30px;
   }
-  .footer p {
+  .footer .footer-paragraph {
     color: #272a31;
   }
 }
@@ -525,7 +525,7 @@ li {
     width: 120px;
     height: 30px;
   }
-  .footer p {
+  .footer .footer-paragraph {
     color: #272a31;
   }
 }

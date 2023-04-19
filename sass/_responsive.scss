@@ -64,8 +64,9 @@
         }
       }
     }
+
     .main-program__link {
-      display: none; 
+      display: none;
     }
   }
 
@@ -157,7 +158,7 @@
     }
 
     .main-program__link {
-      display: none; 
+      display: none;
     }
   }
 
@@ -235,7 +236,7 @@
     }
 
     .main-program__link {
-      display: none; 
+      display: none;
     }
   }
 
@@ -270,6 +271,7 @@
 
     .navbar {
       @include flex-space-between(row);
+
       .menu-navbar {
         visibility: visible;
 
@@ -347,7 +349,7 @@
             height: 40px;
           }
 
-          h3{
+          h3 {
             font-size: 16px;
           }
         }
@@ -360,7 +362,7 @@
     }
 
     .main-program__button {
-      display: none; 
+      display: none;
     }
 
     .main-program__link {
@@ -402,7 +404,7 @@
       height: 30px;
     }
 
-    p {
+    .footer-paragraph {
       color: map-get($map: $colors, $key: "primary");
     }
   }
@@ -419,6 +421,7 @@
 
     .navbar {
       @include flex-space-between(row);
+
       .menu-navbar {
         visibility: visible;
 
@@ -509,7 +512,7 @@
     }
 
     .main-program__button {
-      display: none; 
+      display: none;
     }
 
     .main-program__link {
@@ -540,19 +543,19 @@
       display: none;
     }
   }
-  
+
   .partners {
     @include flex-center(column);
   }
-  
+
   .footer {
     .footer-img {
       width: 120px;
       height: 30px;
     }
 
-    p {
-      color: map-get($map: $colors, $key: "primary");;
+    .footer-paragraph {
+      color: map-get($map: $colors, $key: "primary");
     }
   }
 }
