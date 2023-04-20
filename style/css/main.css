@@ -736,6 +736,7 @@ header.open {
 }
 .main-program .main-program__container .main-program__list:hover {
   background-color: rgba(170, 167, 167, 0.479);
+  border: 3px solid #fff;
 }
 .main-program .main-program__button {
   background-color: #ec5242;
