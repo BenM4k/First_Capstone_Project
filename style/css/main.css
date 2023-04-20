@@ -781,7 +781,7 @@ header.open {
   position: relative;
   width: 30%;
   height: 90px;
-  background: url(/assets/s-l500.jpg);
+  background: url(../../assets/s-l500.jpg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 50px 50px;
