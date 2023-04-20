@@ -319,6 +319,9 @@ li {
   header {
     height: 0;
   }
+  header .sm {
+    display: none;
+  }
   header .navbar .logo {
     visibility: hidden;
   }
@@ -360,6 +363,9 @@ li {
   header {
     height: 0;
   }
+  header .sm {
+    display: none;
+  }
   header .navbar .logo {
     visibility: hidden;
   }
@@ -391,6 +397,9 @@ li {
 @media screen and (min-width: 768px) and (max-width: 1109px) {
   header {
     height: 0;
+  }
+  header .sm {
+    display: none;
   }
   header .navbar .logo {
     visibility: hidden;

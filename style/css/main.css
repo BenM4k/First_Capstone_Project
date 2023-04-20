@@ -734,6 +734,9 @@ header.open {
   color: #fff;
   font-size: 12px;
 }
+.main-program .main-program__container .main-program__list:hover {
+  background-color: rgba(170, 167, 167, 0.479);
+}
 .main-program .main-program__button {
   background-color: #ec5242;
   padding: 15px 25px;
