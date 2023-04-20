@@ -1,3 +1,6 @@
+@import "../config", "../variables";
+@import "./about_home", "./about_logo", "./about_past", "./about_partner", "./about_responsive";
+
 header {
   width: 100%;
 
@@ -119,5 +122,25 @@ header {
   &.open {
     height: 100vh;
     background: map-get($map: $colors, $key: "primary");
+  }
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff;
+
+  @include flex-center(row);
+
+  gap: 30px;
+
+  .footer-img {
+    width: 30%;
+    height: 20px;
+  }
+
+  p {
+    font-size: 10px;
+    color: gray;
   }
 }

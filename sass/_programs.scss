@@ -1,0 +1,66 @@
+@import "./variables";
+
+.main-program {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: map-get($map: $colors, $key: "primary");
+  background-image:
+    radial-gradient(
+      rgb(48, 48, 48) 6px,
+      transparent 6px
+    );
+  background-size: 30px 30px;
+
+  @include flex-center(column);
+
+  .main-program__title {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .main-program__line {
+    display: block;
+    margin-top: 15px;
+    background-color: map-get($map: $colors, $key: "secondary");
+    height: 2px;
+    width: 10%;
+  }
+
+  .main-program__container {
+    margin: 20px 0 20px 0;
+    gap: 7px;
+
+    .main-program__list {
+      width: 100%;
+      background-color: rgba(170, 167, 167, 0.25);
+      padding: 5px;
+
+      .list-head {
+        gap: 10px;
+
+        h3 {
+          color: map-get($map: $colors, $key: "secondary");
+          font-weight: map-get($map: $font_weights, $key: "bold");
+        }
+      }
+
+      p {
+        color: #fff;
+        font-size: 12px;
+      }
+
+      &:hover {
+        background-color: rgba(170, 167, 167, 0.479);
+        border: 3px solid #fff;
+      }
+    }
+  }
+
+  .main-program__button {
+    background-color: map-get($map: $colors, $key: "secondary");
+    padding: 15px 25px;
+    color: #fff;
+    border: none;
+  }
+}

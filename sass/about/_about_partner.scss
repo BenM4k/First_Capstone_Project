@@ -1,0 +1,58 @@
+@import "../variables";
+
+.partners {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: gray;
+
+  @include flex-center(column);
+
+  h2 {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+  }
+
+  span {
+    display: block;
+    margin-top: 15px;
+    background-color: map-get($map: $colors, $key: "secondary");
+    height: 2px;
+    width: 10%;
+    opacity: 0.3;
+  }
+
+  ul {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+
+    .partners-list1 {
+      @include flex-space-between(row);
+
+      padding: 0 50px 0 50px;
+
+      a {
+        img {
+          width: 60px;
+          height: 25px;
+        }
+      }
+    }
+
+    .partners-list2 {
+      margin-top: 20px;
+
+      @include flex-space-around(row);
+
+      padding: 0 55px 0 55px;
+
+      a {
+        .list-img {
+          width: 90px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}

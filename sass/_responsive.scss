@@ -1,1 +1,587 @@
-@import "./variables"
+@import "./variables";
+
+@include breakpoint(mobilexs) {
+  header {
+    height: 0;
+
+    .sm {
+      display: none;
+    }
+
+    .navbar {
+      .logo {
+        visibility: hidden;
+      }
+
+      .menu-navbar {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .home-title {
+    font-size: 20px;
+  }
+
+  .home-title__big {
+    font-size: 25px;
+  }
+
+  .home-paragraph {
+    padding: 10px;
+  }
+
+  .home-footer {
+    font-size: 20px;
+  }
+
+  .home-copywrite {
+    font-size: 12px;
+  }
+
+  .main-program {
+    .main-program__container {
+      @include flex-center(column);
+
+      .main-program__list {
+        @include flex-center(row);
+
+        gap: 5px;
+
+        .list-head {
+          @include flex-center(row);
+
+          width: 40%;
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+
+          h3 {
+            font-size: 13px;
+          }
+        }
+
+        p {
+          width: 60%;
+        }
+      }
+    }
+
+    .main-program__link {
+      display: none;
+    }
+  }
+
+  .list-img {
+    .featured-speakers__img {
+      width: 75px;
+      height: 80px;
+    }
+  }
+
+  .featured-speakers__button {
+    width: 100%;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@include breakpoint(mobile) {
+  header {
+    height: 0;
+
+    .sm {
+      display: none;
+    }
+
+    .navbar {
+      .logo {
+        visibility: hidden;
+      }
+
+      .menu-navbar {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .home {
+    .home-title {
+      font-size: 20px;
+    }
+
+    .home-title__big {
+      font-size: 30px;
+    }
+
+    .home-paragraph {
+      padding: 10px;
+    }
+
+    .home-footer {
+      font-size: 20px;
+    }
+
+    .home-copywrite {
+      font-size: 12px;
+    }
+  }
+
+  .main-program {
+    .main-program__container {
+      @include flex-center(column);
+
+      .main-program__list {
+        @include flex-center(row);
+
+        gap: 7px;
+
+        .list-head {
+          @include flex-space-between(row);
+
+          width: 40%;
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+
+          h3 {
+            font-size: 13px;
+          }
+        }
+
+        p {
+          width: 60%;
+        }
+      }
+    }
+
+    .main-program__link {
+      display: none;
+    }
+  }
+
+  .list-img {
+    .featured-speakers__img {
+      width: 100px;
+      height: 80px;
+    }
+  }
+
+  .featured-speakers__button {
+    width: 100%;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@include breakpoint(sm) {
+  header {
+    height: 0;
+
+    .sm {
+      display: none;
+    }
+
+    .navbar {
+      .logo {
+        visibility: hidden;
+      }
+
+      .menu-navbar {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .home-paragraph {
+    padding: 10px;
+  }
+
+  .home-footer {
+    font-size: 20px;
+  }
+
+  .home-copywrite {
+    font-size: 12px;
+  }
+
+  .main-program {
+    .main-program__container {
+      @include flex-center(column);
+
+      .main-program__list {
+        @include flex-center(row);
+
+        gap: 15px;
+
+        .list-head {
+          @include flex-space-between(row);
+
+          width: 25%;
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        p {
+          width: 60%;
+        }
+      }
+    }
+
+    .main-program__link {
+      display: none;
+    }
+  }
+
+  .list-img {
+    .featured-speakers__img {
+      width: 100px;
+      height: 80px;
+    }
+  }
+
+  .featured-speakers__button {
+    width: 100%;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@include breakpoint(md) {
+  header {
+    height: 90px;
+    padding-bottom: 20px;
+    background-color: #fff;
+
+    .menu-btn {
+      visibility: hidden;
+    }
+
+    .sm {
+      @include flex-end(row);
+
+      padding: 0 120px 0 120px;
+    }
+
+    .navbar {
+      @include flex-space-between(row);
+
+      .menu-navbar {
+        visibility: visible;
+
+        @include flex-space-between(row);
+
+        width: 400px;
+        gap: 10px;
+
+        .menu-navbar__item {
+          a {
+            color: map-get($map: $colors, $key: "primary");
+
+            &:hover {
+              color: map-get($map: $colors, $key: "secondary");
+            }
+
+            &.active {
+              color: map-get($map: $colors, $key: "secondary");
+            }
+          }
+
+          &:last-child {
+            padding: 5px 15px 5px 15px;
+            border: 2px solid map-get($map: $colors, $key: "secondary");
+
+            a {
+              color: map-get($map: $colors, $key: "secondary");
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .home {
+    .home-title {
+      font-size: 40px;
+    }
+
+    .home-title__big {
+      font-size: 60px;
+      width: 625px;
+    }
+
+    .home-paragraph {
+      width: 625px;
+      padding: 25px;
+    }
+
+    .home-footer {
+      font-size: 35px;
+    }
+
+    .home-copywrite {
+      font-size: 15px;
+    }
+  }
+
+  .main-program {
+    .main-program__container {
+      @include flex-center(row);
+
+      .main-program__list {
+        height: 180px;
+
+        @include flex-center(column);
+
+        gap: 10px;
+
+        .list-head {
+          @include flex-center(column);
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+
+          h3 {
+            font-size: 16px;
+          }
+        }
+
+        p {
+          height: 30%;
+          text-align: center;
+        }
+      }
+    }
+
+    .main-program__button {
+      display: none;
+    }
+
+    .main-program__link {
+      margin-top: 35px;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: underline;
+      font-size: 12px;
+    }
+  }
+
+  .featured-speakers {
+    .featured-speakers__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .featured-speakers__list {
+        .list-img {
+          img {
+            width: 100px;
+            height: 80px;
+          }
+        }
+      }
+    }
+
+    .featured-speakers__button {
+      display: none;
+    }
+  }
+
+  .partners {
+    @include flex-center(column);
+  }
+
+  .footer {
+    .footer-img {
+      width: 120px;
+      height: 30px;
+    }
+
+    .footer-paragraph {
+      color: map-get($map: $colors, $key: "primary");
+    }
+  }
+}
+
+@include breakpoint(lg) {
+  header {
+    height: 90px;
+    padding-bottom: 20px;
+    background-color: #fff;
+
+    .menu-btn {
+      visibility: hidden;
+    }
+
+    .sm {
+      @include flex-end(row);
+
+      padding: 0 120px 0 360px;
+    }
+
+    .navbar {
+      @include flex-space-between(row);
+
+      .menu-navbar {
+        visibility: visible;
+
+        @include flex-space-between(row);
+
+        width: 400px;
+        gap: 10px;
+
+        .menu-navbar__item {
+          a {
+            color: map-get($map: $colors, $key: "primary");
+
+            &:hover {
+              color: map-get($map: $colors, $key: "secondary");
+            }
+
+            &.active {
+              color: map-get($map: $colors, $key: "secondary");
+            }
+          }
+
+          &:last-child {
+            padding: 5px 15px 5px 15px;
+            border: 2px solid map-get($map: $colors, $key: "secondary");
+
+            a {
+              color: map-get($map: $colors, $key: "secondary");
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .home {
+    .home-title {
+      font-size: 40px;
+    }
+
+    .home-title__big {
+      font-size: 60px;
+      width: 625px;
+    }
+
+    .home-paragraph {
+      width: 625px;
+      padding: 30px;
+    }
+
+    .home-footer {
+      font-size: 35px;
+    }
+
+    .home-copywrite {
+      font-size: 15px;
+    }
+  }
+
+  .main-program {
+    .main-program__container {
+      @include flex-center(row);
+
+      .main-program__list {
+        height: 190px;
+
+        @include flex-center(column);
+
+        gap: 10px;
+
+        .list-head {
+          @include flex-center(column);
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+
+          h3 {
+            font-size: 16px;
+          }
+        }
+
+        p {
+          height: 30%;
+          text-align: center;
+        }
+      }
+    }
+
+    .main-program__button {
+      display: none;
+    }
+
+    .main-program__link {
+      margin-top: 35px;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: underline;
+      font-size: 12px;
+    }
+  }
+
+  .featured-speakers {
+    .featured-speakers__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .featured-speakers__list {
+        .list-img {
+          img {
+            width: 100px;
+            height: 80px;
+          }
+        }
+      }
+    }
+
+    .featured-speakers__button {
+      display: none;
+    }
+  }
+
+  .partners {
+    @include flex-center(column);
+  }
+
+  .footer {
+    .footer-img {
+      width: 120px;
+      height: 30px;
+    }
+
+    .footer-paragraph {
+      color: map-get($map: $colors, $key: "primary");
+    }
+  }
+}

@@ -5,37 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben's Restaurant</title>
-    <link rel="stylesheet" href="/style/css/main.css">
+    <link rel="stylesheet" href="style/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <div class="menu-btn">
             <span class="burger"></span>
         </div>
+        <ul class="sm">
+            <li><a href="facebook.com" class="fa fa-facebook smicon"></a></li>
+            <li><a href="twitter.com" class="fa fa-twitter smicon"></a></li>
+            <li><a href="#" class="smicon">English</a></li>
+            <li><a href="#" class="smicon">My page</a></li>
+            <li><a href="#" class="smicon">Logout</a></li>
+        </ul>
         <nav class="navbar">
+            <a href="index.html" class="logo"><img src="assets/1280px-Daum_Kakao_wordmark_-_2014.svg.png" alt="logo_img"></a>
             <ul class="menu-navbar">
                 <li class="menu-navbar__item">
-                    <a href="/webpages/about.html">about</a>
+                    <a href="pages/about.html" class="active">About</a>
+                </li>
+                <li class="menu-navbar__item">
+                    <a href="pages/program.html">Program</a>
+                </li>
+                <li class="menu-navbar__item">
+                    <a href="pages/join.html">Join</a>
+                </li>
+                <li class="menu-navbar__item">
+                    <a href="pages/sponsor.html">Sponsor</a>
+                </li>
+                <li class="menu-navbar__item">
+                    <a href="pages/news.html">News</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="home">
-
+            <h2 class="home-title">"Hello! Sharing world"</h2>
+            <h1 class="home-title__big">Creative commons global summit 2015</h1>
+            <p class="home-paragraph"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt autem, delectus sit animi nam nihil, voluptatibus nobis natus atque quo qui blanditiis. Nobis ad autem nemo at reprehenderit ipsa blanditiis voluptas non nulla consequatur itaque voluptatibus.</p>
+            <h2 class="home-footer">2015.10.15(THU) ~ 16(FRI)</h2>
+            <h3 class="home-copywrite">&copy; National Museum of Korea, Art Center Nabi and more</h3>
         </section>
         <section class="main-program">
-
+            <h2 class="main-program__title">Main Program</h2>
+            <span class="main-program__line"></span>
+            <ul class="main-program__container">
+                <li class="main-program__list">
+                    <div class="list-head">
+                        <img src="assets/lecture.svg" alt="list_image_one" class="list-head__img">
+                        <h3>Lecture</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, nisi esse.</p>
+                </li>
+                <li class="main-program__list">
+                    <div class="list-head">
+                        <img src="assets/icon2.svg" alt="list_image_two" class="list-head__img">
+                        <h3>CC Exhibition</h3>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </li>
+                <li class="main-program__list">
+                    <div class="list-head">
+                        <img src="assets/forum.svg" alt="list_image_three" class="list-head__img">
+                        <h3>Forum</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum cumque quasi</p>
+                </li>
+                <li class="main-program__list">
+                    <div class="list-head">
+                        <img src="assets/icon4.svg" alt="list_image_four" class="list-head__img">
+                        <h3>Workshop</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="main-program__list">
+                    <div class="list-head">
+                        <img src="assets/icon5.svg" alt="list_image_five" class="list-head__img">
+                        <h3>CC Ignite</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus placeat ab unde reiciendis dolor.</p>
+                </li>
+            </ul>
+            <button class="main-program__button">Join CC Global Summit 2015</button>
+            <a href="#" class="main-program__link">see the whole program</a>
         </section>
         <section class="featured-speakers">
-
+            <h2 class="featured-speakers__title">Featured Speakers</h2>
+            <span class="featured-speakers__line"></span>
+            <ul class="featured-speakers__container"></ul>
+            <button class="featured-speakers__button">More</button>
         </section>
         <section class="partners">
-            
+            <h2>Partner</h2>
+            <span></span>
+            <ul>
+                <li class="partners-list1">
+                    <a href=""><img src="assets/mozilla-1.svg" alt="mozilla_logo"></a>
+                    <a href=""><img src="assets/Google_2015_logo.svg.png" alt="google_logo"></a>
+                    <a href=""><img src="assets/Naver_Logotype.svg.png" alt="naver_logo"></a>
+                    <a href=""><img src="assets/1280px-Daum_Kakao_wordmark_-_2014.svg.png" alt="daum_logo" class="list-img"></a>
+                    <a href=""><img src="assets/Airbnb_Logo_Bélo.svg.png" alt="airbnb_logo" class="list-img"></a>
+                </li>
+            </ul>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <img src="assets/1280px-Daum_Kakao_wordmark_-_2014.svg.png" alt="footer_img" class="footer-img">
+        <p class="footer-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perspiciatis quae quaerat ducimus, provident labore cum commodi obcaecati nam, dignissimos sapiente porro odio accusamus sequi sunt fugit sint maxime omnis</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
