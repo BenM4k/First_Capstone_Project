@@ -63,6 +63,7 @@ The website present a gallery of the restaurant's interior and exterior. The goa
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://benm4k.github.io/First_Capstone_Project/)
+- [Video Presentation](https://www.loom.com/share/b62067066bd7435aabd8443aa39c8e9c)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

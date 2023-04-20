@@ -1,7 +1,7 @@
 header {
   width: 100%;
 
-  @include flex-center(row);
+  @include flex-center(column);
 
   .menu-btn {
     position: absolute;
@@ -55,7 +55,23 @@ header {
     }
   }
 
+  .sm {
+    width: 100%;
+    height: 30px;
+    background-color: map-get($map: $colors, $key: "primary");
+    color: #fff;
+
+    li {
+      margin-left: 15px;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
   .navbar {
+    margin-top: 10px;
     width: 100%;
 
     .logo {

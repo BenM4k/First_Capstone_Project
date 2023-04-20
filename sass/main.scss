@@ -44,7 +44,7 @@
 footer {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #fff;
+  background-color: map-get($map: $colors, $key: "tertiary");
 
   @include flex-start(row);
 

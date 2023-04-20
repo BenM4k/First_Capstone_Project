@@ -4,6 +4,10 @@
   header {
     height: 0;
 
+    .sm {
+      display: none;
+    }
+
     .navbar {
       .logo {
         visibility: hidden;
@@ -93,6 +97,10 @@
 @include breakpoint(mobile) {
   header {
     height: 0;
+
+    .sm {
+      display: none;
+    }
 
     .navbar {
       .logo {
@@ -186,6 +194,10 @@
   header {
     height: 0;
 
+    .sm {
+      display: none;
+    }
+
     .navbar {
       .logo {
         visibility: hidden;
@@ -262,11 +274,18 @@
 
 @include breakpoint(md) {
   header {
-    height: 70px;
+    height: 90px;
+    padding-bottom: 20px;
     background-color: #fff;
 
     .menu-btn {
       visibility: hidden;
+    }
+
+    .sm {
+      @include flex-end(row);
+
+      padding: 0 120px 0 120px;
     }
 
     .navbar {
@@ -412,11 +431,18 @@
 
 @include breakpoint(lg) {
   header {
-    height: 70px;
+    height: 90px;
+    padding-bottom: 20px;
     background-color: #fff;
 
     .menu-btn {
       visibility: hidden;
+    }
+
+    .sm {
+      @include flex-end(row);
+
+      padding: 0 120px 0 360px;
     }
 
     .navbar {

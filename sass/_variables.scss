@@ -56,6 +56,13 @@ $colors : (
   flex-direction: $orientation;
 }
 
+@mixin flex-end($orientation) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: $orientation;
+}
+
 @mixin flex-space-between($orientation) {
   display: flex;
   align-items: center;
